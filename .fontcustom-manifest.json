@@ -1,7 +1,7 @@
 {
   "checksum": {
-    "previous": "a61c2c214ad1cd69256f342bfe80d91ccdd78d872d976648da50d20fcdf9a1ce",
-    "current": "a61c2c214ad1cd69256f342bfe80d91ccdd78d872d976648da50d20fcdf9a1ce"
+    "previous": "e0c2421a613448721bbbe4c49adab6dd3451439c7f6cfb8e64878f38233ee34a",
+    "current": "e0c2421a613448721bbbe4c49adab6dd3451439c7f6cfb8e64878f38233ee34a"
   },
   "fonts": [
     "./assets/internal/cupcake-app-icons.ttf",
@@ -40,12 +40,12 @@
     "project_root": "(pwd)",
     "quiet": false,
     "templates": [
-      "cupcake-app-icons.scss",
+      "cupcake-apps-bar.scss",
       "preview"
     ]
   },
   "templates": [
-    "./assets/internal/cupcake-app-icons.scss",
+    "./assets/internal/cupcake-apps-bar.scss",
     "./preview/cupcake-app-icons-preview.html"
   ]
 }

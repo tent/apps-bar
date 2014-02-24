@@ -22,6 +22,6 @@ output:
   css: ./assets/internal
   preview: ./preview
 
-templates: [ cupcake-app-icons.scss, preview ]
+templates: [ cupcake-apps-bar.scss, preview ]
 css_selector: .app-icn-{{glyph}}
 preprocessor_path: ""
