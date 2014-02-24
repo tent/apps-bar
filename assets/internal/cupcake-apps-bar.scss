@@ -1,0 +1,58 @@
+@import "normalize";
+
+@font-face {
+  font-family: "cupcake-app-icons";
+  src: asset-url("cupcake-app-icons.eot");
+  src: asset-url("cupcake-app-icons.eot?iefix") format("embedded-opentype"),
+       url("data:application/x-font-woff;charset=utf-8;base64,d09GRgABAAAAAAWcAA0AAAAACHQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABGRlRNAAAFgAAAABoAAAAcaqCkxE9TLzIAAAGgAAAASQAAAGB+6pqvY21hcAAAAfwAAAA+AAABQgAP9KtjdnQgAAACPAAAAAQAAAAEAK0M3Wdhc3AAAAV4AAAACAAAAAj//wADZ2x5ZgAAAkwAAAGpAAACGHd5PFVoZWFkAAABMAAAADAAAAA2EdJmAWhoZWEAAAFgAAAAHQAAACQprhONaG10eAAAAewAAAAQAAAAEDzwAK1sb2NhAAACQAAAAAoAAAAKATgAWG1heHAAAAGAAAAAHwAAACAASwCkbmFtZQAAA/gAAAFaAAAC5XBvMjJwb3N0AAAFVAAAACIAAAAynRhOrXjaY2BkYGAA4kMM7v3x/DZfGbhFAoAiDOcNG34h6P8WIgHCHUAuBwMTSBQAL68K3XjaY2BkYBDu+G/BeEUkgAEIgCQjAypgAQBfPgN2AAAAeNpjYGRgYGBhKGZgZQABJiBmZACJOTDogQQADzkA8AB42mNgEQlg/MLAysDAa8JnzsDAdANCcx5gZGJ1BPIZ2DgZ4EAAwWQISHNNYTjwkeEjg3DHfwvGK8IdDCeAwoxIShQYGAFMsQypAAAAFFAArQAAAAAUUAAAFFAAAHjaY2BgYGaAYBkGRgYQsAHyGMF8FgYFIM0ChED+R4b//yEkPzNUJQMjGwOMycDIBCSYGFABI8OwBwA8VAasAAAArQzdAAAALAAsACwBDAAAeNqNTz9oGmEUf+/z9OTQRq1p4UDxJFoIR9KqLUVMCSHppjWrVjKEQusYMDgnUIpz26XQ5SK4SLnjssQ1EDJ0ELLkj0NwrWDrFPRe+g6ydCkZPn5/efw+ENAF8D0KtsADMiyZCMsFS5ZglDF93quC5RFMwfS4tte1LdmHs4KFrp8Na+GUFta63g/TdWlu+jvY+rPbDTwFAC/A7cto+eEnUCEOeajADrtxlDGO89EHIrkknudeebKZx/gC+UwkEUBQcV7LKZjWkZVPcZWKsACs/ELFkMIQwITOoGBIZeBswS8iIcE0IfmFCEW4ctpIao6dXy3u2yf2fvFZpfnlTWpRbCada+q9xyNs4zvU+w3q1TpjGtIP+s5vOO7UqNfoo85pU0SFhD+5WcPYcb1+zDWDqpR1Zs4vZ0ZZ5gYN3QRj3Glz91zURQkneIBpw6ALektBx3K+OhYFmV8YBqY5myj2648r0+Fau7p9uFcs7h1ulz83KxlZelK4UXGDeoG5Rp/O6BtVByZuYox33e00B3fTpfX7LBLSP78YbR1gyl0gSv9degnwFynexe4AAAB42p2PQWrCQBSG/4lRcCO1JxiEgl0kjsFVoCvBhQdw0V2ME02FJCQjYulBeooeoPQMPULP4BH6Jw7S0tKC85j3vnnvn3nzAPTwAoHTusOTZYE+Piw76ArXcgueeLDsoi/eLLdxJY6WO+g7N1QKt8vTY3OrZoEBXi07uMbRcgv3omfZxUA8W25DinfLHQwcgSlKaEQw9CtILHGgn/NU0TR5j5TVDWmGHBm5jiXWTTWAD8U4pMLQCoQY0RKrTc5an+8l9BnZ4BaYljoyeiWXBznXVaXlPjUbOcszM8vLtZaBr+RwY0wRjkYJs0md9avEz7Th9Rg7dov59y1f9BgLmsffxk3vipJdEUdb7UVF4aVxnjH1i+pL9a8JQ+7/e550ASbMBs1WGPOE73OF8sffmAsmXuAFajy5dLoFtSVraaOR7F1395tYz4CFLqs0z6RSY18pJS9s9AlAqIbSAAB42mNgYgCDv2WMLECKkQEdQESZGJnYS/My3QwNDABIrQOwAAAAAAAB//8AAnjaY2BgYGQAgjO2i86D6POGDb9gNABNMQdwAAA=") format("woff"),
+       asset-url("cupcake-app-icons.ttf") format("truetype"),
+       asset-url("cupcake-app-icons.svg#cupcake-app-icons") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "cupcake-app-icons";
+    src: asset-url("cupcake-app-icons.svg#cupcake-app-icons") format("svg");
+  }
+}
+
+$cupcake-app-icons-flynn: "\f100";
+
+#apps-bar {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+
+	background-color: #272b34;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+li {
+  &:before {
+    display: inline-block;
+    font-family: "cupcake-app-icons";
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    line-height: 1;
+    text-decoration: inherit;
+    text-transform: none;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  
+    &.flynn:before {
+      content: $cupcake-app-icons-flynn;
+    }
+  
+}
