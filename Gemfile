@@ -2,6 +2,7 @@ source "https://rubygems.org"
 
 gem "fontcustom", :git => "git://github.com/jvatic/fontcustom.git", :branch => "custom"
 gem "rake"
+gem "rack"
 
 gem "sass"
 gem "sprockets-sass"

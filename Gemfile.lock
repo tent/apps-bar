@@ -69,6 +69,7 @@ PLATFORMS
 
 DEPENDENCIES
   fontcustom!
+  rack
   rake
   react-jsx-sprockets!
   sass
