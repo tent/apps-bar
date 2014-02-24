@@ -1,0 +1,15 @@
+$apps-bar-width: 70px;
+
+#apps-bar {
+	position: absolute;
+	display: block;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: $apps-bar-width;
+	border: 0;
+}
+
+body {
+	margin-left: $apps-bar-width;
+}
