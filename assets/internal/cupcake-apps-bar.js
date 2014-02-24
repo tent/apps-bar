@@ -9,7 +9,7 @@
 		Views: {},
 
 		run: function () {
-			var el = document.getElementById("app-bar");
+			var el = document.getElementById("apps-bar");
 			React.renderComponent(
 				this.Views.Nav({
 					items: this.config.navItems
