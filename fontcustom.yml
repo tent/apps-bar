@@ -1,0 +1,27 @@
+project_root: (pwd)
+input: (project_root)
+output: (project_root)/(font name)
+config: (pwd)/fontcustom.yml
+debug: false
+quiet: false
+
+font_design_size: 52                  # The size of the original glyphs
+font_em: 5200                         # Scale font up to this size
+font_ascent: 5000                     # Location of font ascent
+font_descent: 200                     # Location of font descent
+
+no_hash: true
+font_name: "cupcake-app-icons"
+
+input:
+  vectors: ./src
+  templates: ./templates
+
+output:
+  fonts: ./assets/internal
+  css: ./assets/internal
+  preview: ./preview
+
+templates: [ cupcake-app-icons.scss, preview ]
+css_selector: .app-icn-{{glyph}}
+preprocessor_path: ""
