@@ -1,4 +1,4 @@
-cupcake-apps-sidebar
+cupcake-apps-bar
 ====================
 
 Icon font is generated with [FontCustom](https://github.com/FontCustom/fontcustom).
@@ -7,29 +7,25 @@ Icon font is generated with [FontCustom](https://github.com/FontCustom/fontcusto
 
 ```ruby
 # Gemfile
-gem "cupcake-apps-sidebar", :git => "git://github.com/cupcake/cupcake-apps-sidebar.git"
+gem "cupcake-apps-bar", :git => "git://github.com/cupcake/cupcake-apps-bar.git"
 ```
 
 ```ruby
-require "cupcake-apps-sidebar"
-CupcakeAppsSidebar::Sprockets.setup(sprockets_environment)
+# app.rb
+require "cupcake-apps-bar"
+CupcakeAppsBar::Sprockets.setup(sprockets_environment)
 ```
 
 ```erb
-<!DOCTYPE>
-<html lang="en">
+<link href="<%= asset_path("cupcake-apps-bar.css") %>" media="screen" rel="stylesheet" type="text/css" />
 
-<head>
-  <link href="<%= asset_path("cupcake-apps-sidebar") %>" media="screen" rel="stylesheet" type="text/css">
-</head>
+<iframe id="apps-sidebar" src="https://url/to/cupcake-apps-bar.html"></iframe>
+```
 
-<body>
-  <iframe id="apps-sidebar" src="https://url/to/cupcake-apps-sidebar.html"></iframe>
+## Compiling
 
-  <script type="application/javascript" src="<%= asset_path("cupcake-apps-sidebar") %>"></script>
-</body>
-
-</html>
+```shell
+ASSETS_DIR=./build ASSET_ROOT=https://example.com/assets bundle exec rake compile
 ```
 
 ## Contributing
