@@ -1,0 +1,51 @@
+{
+  "checksum": {
+    "previous": "a61c2c214ad1cd69256f342bfe80d91ccdd78d872d976648da50d20fcdf9a1ce",
+    "current": "a61c2c214ad1cd69256f342bfe80d91ccdd78d872d976648da50d20fcdf9a1ce"
+  },
+  "fonts": [
+    "./assets/internal/cupcake-app-icons.ttf",
+    "./assets/internal/cupcake-app-icons.svg",
+    "./assets/internal/cupcake-app-icons.woff",
+    "./assets/internal/cupcake-app-icons.eot"
+  ],
+  "glyphs": {
+    "flynn": {
+      "codepoint": 61696,
+      "source": "./src/flynn.svg"
+    }
+  },
+  "options": {
+    "autowidth": false,
+    "config": "fontcustom.yml",
+    "css_selector": ".app-icn-{{glyph}}",
+    "debug": false,
+    "font_ascent": 5000,
+    "font_descent": 200,
+    "font_design_size": 52,
+    "font_em": 5200,
+    "font_name": "cupcake-app-icons",
+    "force": false,
+    "input": {
+      "templates": "./templates",
+      "vectors": "./src"
+    },
+    "no_hash": true,
+    "output": {
+      "css": "./assets/internal",
+      "fonts": "./assets/internal",
+      "preview": "./preview"
+    },
+    "preprocessor_path": "",
+    "project_root": "(pwd)",
+    "quiet": false,
+    "templates": [
+      "cupcake-app-icons.scss",
+      "preview"
+    ]
+  },
+  "templates": [
+    "./assets/internal/cupcake-app-icons.scss",
+    "./preview/cupcake-app-icons-preview.html"
+  ]
+}

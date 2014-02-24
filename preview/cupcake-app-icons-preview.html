@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>cupcake-app-icons glyphs preview</title>
+
+    <style>
+      /* Page Styles */
+
+      * {
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        background: #fff;
+        color: #444;
+        font: 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+      }
+
+      a,
+      a:visited {
+        color: #888;
+        text-decoration: underline;
+      }
+      a:hover,
+      a:focus { color: #000; }
+
+      header {
+        border-bottom: 2px solid #ddd;
+        margin-bottom: 20px;
+        overflow: hidden;
+        padding: 20px 0;
+      }
+
+      header h1 {
+        color: #888;
+        float: left;
+        font-size: 36px;
+        font-weight: 300;
+      }
+
+      header a {
+        float: right;
+        font-size: 14px;
+      }
+
+      .container {
+        margin: 0 auto;
+        max-width: 1200px;
+        min-width: 960px;
+        padding: 0 40px;
+        width: 90%;
+      }
+
+      .glyph {
+        border-bottom: 1px dotted #ccc;
+        padding: 10px 0 20px;
+        margin-bottom: 20px;
+      }
+
+      .preview-glyphs { vertical-align: bottom; }
+
+      .preview-scale {
+        color: #888;
+        font-size: 12px;
+        margin-top: 5px;
+      }
+
+      .step {
+        display: inline-block;
+        line-height: 1;
+        position: relative;
+        width: 10%;
+      }
+
+      .step .letters,
+      .step i {
+        -webkit-transition: opacity .3s;
+        -moz-transition: opacity .3s;
+        -ms-transition: opacity .3s;
+        -o-transition: opacity .3s;
+        transition: opacity .3s;
+      }
+
+      .step:hover .letters { opacity: 1; }
+      .step:hover i { opacity: .3; }
+
+      .letters {
+        opacity: .3;
+        position: absolute;
+      }
+
+      .characters-off .letters { display: none; }
+      .characters-off .step:hover i { opacity: 1; }
+
+      
+      .size-12 { font-size: 12px; }
+      
+      .size-14 { font-size: 14px; }
+      
+      .size-16 { font-size: 16px; }
+      
+      .size-18 { font-size: 18px; }
+      
+      .size-21 { font-size: 21px; }
+      
+      .size-24 { font-size: 24px; }
+      
+      .size-36 { font-size: 36px; }
+      
+      .size-48 { font-size: 48px; }
+      
+      .size-60 { font-size: 60px; }
+      
+      .size-72 { font-size: 72px; }
+      
+
+      .usage { margin-top: 10px; }
+
+      .usage input {
+        font-family: monospace;
+        margin-right: 3px;
+        padding: 2px 5px;
+        text-align: center;
+      }
+
+      .usage .point { width: 150px; }
+
+      .usage .class { width: 250px; }
+
+      footer {
+        color: #888;
+        font-size: 12px;
+        padding: 20px 0;
+      }
+
+      /* Icon Font: cupcake-app-icons */
+
+      @font-face {
+  font-family: "cupcake-app-icons";
+  src: url("../assets/internal/cupcake-app-icons.eot");
+  src: url("../assets/internal/cupcake-app-icons.eot?#iefix") format("embedded-opentype"),
+       url(data:application/x-font-woff;charset=utf-8;base64,d09GRgABAAAAAAWcAA0AAAAACHQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABGRlRNAAAFgAAAABoAAAAcaqB1/E9TLzIAAAGgAAAASQAAAGB+6pqvY21hcAAAAfwAAAA+AAABQgAP9KtjdnQgAAACPAAAAAQAAAAEAK0M3Wdhc3AAAAV4AAAACAAAAAj//wADZ2x5ZgAAAkwAAAGpAAACGHd5PFVoZWFkAAABMAAAADAAAAA2EdI3OWhoZWEAAAFgAAAAHQAAACQprhONaG10eAAAAewAAAAQAAAAEDzwAK1sb2NhAAACQAAAAAoAAAAKATgAWG1heHAAAAGAAAAAHwAAACAASwCkbmFtZQAAA/gAAAFaAAAC5XBvMjJwb3N0AAAFVAAAACIAAAAynRhOrXjaY2BkYGAA4kOMTOvj+W2+MnCLBABFGM4bZk5D0P8tRAKEO4BcDgYmkCgAExgJw3jaY2BkYBDu+G/BeEUkgAEIgCQjAypgAQBfPgN2AAAAeNpjYGRgYGBhKGZgZQABJiBmZACJOTDogQQADzkA8AB42mNgEQlg/MLAysDAa8JnzsDAdANCcx5gZGJ1BPIZ2DgZ4EAAwWQISHNNYTjwkeEjg3DHfwvGK8IdDCeAwoxIShQYGAFMsQypAAAAFFAArQAAAAAUUAAAFFAAAHjaY2BgYGaAYBkGRgYQsAHyGMF8FgYFIM0ChED+R4b//yEkPzNUJQMjGwOMycDIBCSYGFABI8OwBwA8VAasAAAArQzdAAAALAAsACwBDAAAeNqNTz9oGmEUf+/z9OTQRq1p4UDxJFoIR9KqLUVMCSHppjWrVjKEQusYMDgnUIpz26XQ5SK4SLnjssQ1EDJ0ELLkj0NwrWDrFPRe+g6ydCkZPn5/efw+ENAF8D0KtsADMiyZCMsFS5ZglDF93quC5RFMwfS4tte1LdmHs4KFrp8Na+GUFta63g/TdWlu+jvY+rPbDTwFAC/A7cto+eEnUCEOeajADrtxlDGO89EHIrkknudeebKZx/gC+UwkEUBQcV7LKZjWkZVPcZWKsACs/ELFkMIQwITOoGBIZeBswS8iIcE0IfmFCEW4ctpIao6dXy3u2yf2fvFZpfnlTWpRbCada+q9xyNs4zvU+w3q1TpjGtIP+s5vOO7UqNfoo85pU0SFhD+5WcPYcb1+zDWDqpR1Zs4vZ0ZZ5gYN3QRj3Glz91zURQkneIBpw6ALektBx3K+OhYFmV8YBqY5myj2648r0+Fau7p9uFcs7h1ulz83KxlZelK4UXGDeoG5Rp/O6BtVByZuYox33e00B3fTpfX7LBLSP78YbR1gyl0gSv9degnwFynexe4AAAB42p2PQWrCQBSG/4lRcCO1JxiEgl0kjsFVoCvBhQdw0V2ME02FJCQjYulBeooeoPQMPULP4BH6Jw7S0tKC85j3vnnvn3nzAPTwAoHTusOTZYE+Piw76ArXcgueeLDsoi/eLLdxJY6WO+g7N1QKt8vTY3OrZoEBXi07uMbRcgv3omfZxUA8W25DinfLHQwcgSlKaEQw9CtILHGgn/NU0TR5j5TVDWmGHBm5jiXWTTWAD8U4pMLQCoQY0RKrTc5an+8l9BnZ4BaYljoyeiWXBznXVaXlPjUbOcszM8vLtZaBr+RwY0wRjkYJs0md9avEz7Th9Rg7dov59y1f9BgLmsffxk3vipJdEUdb7UVF4aVxnjH1i+pL9a8JQ+7/e550ASbMBs1WGPOE73OF8sffmAsmXuAFajy5dLoFtSVraaOR7F1395tYz4CFLqs0z6RSY18pJS9s9AlAqIbSAAB42mNgYgCDv2WMLECKkQEdQESZGJnYS/My3QwNDABIrQOwAAAAAAAB//8AAnjaY2BgYGQAgjO2i86D6POGmdNgNABINQZ6AAA=),
+       url("../assets/internal/cupcake-app-icons.woff") format("woff"),
+       url("../assets/internal/cupcake-app-icons.ttf") format("truetype"),
+       url("../assets/internal/cupcake-app-icons.svg#cupcake-app-icons") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "cupcake-app-icons";
+    src: url("../assets/internal/cupcake-app-icons.svg#cupcake-app-icons") format("svg");
+  }
+}
+
+      [data-icon]:before { content: attr(data-icon); }
+
+      [data-icon]:before,
+      .app-icn-flynn:before {
+        display: inline-block;
+        font-family: "cupcake-app-icons";
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        line-height: 1;
+        text-decoration: inherit;
+        text-transform: none;
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      .app-icn-flynn:before { content: "\f100"; }
+    </style>
+
+    <!--[if lte IE 8]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+    <script>
+      function toggleCharacters() {
+        var body = document.getElementsByTagName('body')[0];
+        body.className = body.className === 'characters-off' ? '' : 'characters-off';
+      }
+    </script>
+  </head>
+
+  <body class="characters-off">
+    <div id="page" class="container">
+      <header>
+        <h1>cupcake-app-icons contains 1 glyphs:</h1>
+        <a onclick="toggleCharacters(); return false;" href="#">Toggle Preview Characters</a>
+      </header>
+
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="app-icn-flynn" class="app-icn-flynn"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="app-icn-flynn" class="app-icn-flynn"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="app-icn-flynn" class="app-icn-flynn"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="app-icn-flynn" class="app-icn-flynn"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="app-icn-flynn" class="app-icn-flynn"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="app-icn-flynn" class="app-icn-flynn"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="app-icn-flynn" class="app-icn-flynn"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="app-icn-flynn" class="app-icn-flynn"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="app-icn-flynn" class="app-icn-flynn"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="app-icn-flynn" class="app-icn-flynn"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".app-icn-flynn" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf100;" />
+        </div>
+      </div>
+      
+
+      <footer>
+        Made with love using <a href="http://fontcustom.com">Font Custom</a>.
+      </footer>
+    </div>
+  </body>
+</html>
