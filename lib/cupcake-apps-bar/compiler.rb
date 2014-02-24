@@ -45,7 +45,7 @@ module CupcakeAppsBar::Compiler
   end
 
   def output_dir
-    @output_dir ||= CupcakeAppsBar.expand_path("build")
+    @output_dir ||= ENV['ASSETS_DIR'] || CupcakeAppsBar.expand_path("build")
   end
 
   def compile_assets(options = {})
