@@ -8,7 +8,7 @@ namespace :fontcustom do
 end
 
 task :compile => "fontcustom:build" do
-  require 'cupcake-apps-sidebar/compiler'
-  sh "rm -rf #{CupcakeAppsSidebar::Compiler.output_dir}"
-  CupcakeAppsSidebar::Compiler.gzip_assets
+  require 'cupcake-apps-bar/compiler'
+  sh "rm -rf #{CupcakeAppsBar::Compiler.output_dir}"
+  CupcakeAppsBar::Compiler.gzip_assets
 end

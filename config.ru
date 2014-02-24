@@ -6,11 +6,11 @@ Bundler.require
 
 $stdout.sync = true
 
-require 'cupcake-apps-sidebar/compiler'
+require 'cupcake-apps-bar/compiler'
 
 ENV['ASSET_ROOT'] = "/assets"
 
-sprockets = CupcakeAppsSidebar::Compiler.sprockets_environment
+sprockets = CupcakeAppsBar::Compiler.sprockets_environment
 
 map '/' do
   run lambda { |env|

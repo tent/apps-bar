@@ -1,12 +1,12 @@
-require 'cupcake-apps-sidebar'
+require 'cupcake-apps-bar'
 require 'react-jsx-sprockets'
 require 'sass'
 require 'sprockets-sass'
 
-module CupcakeAppsSidebar::Compiler
+module CupcakeAppsBar::Compiler
   extend self
 
-  ASSET_NAMES = CupcakeAppsSidebar.internal_assets_dirs.inject([]) { |memo, path|
+  ASSET_NAMES = CupcakeAppsBar.internal_assets_dirs.inject([]) { |memo, path|
     memo + Dir["#{path}/**/*"]
   }.freeze
 
@@ -27,7 +27,7 @@ module CupcakeAppsSidebar::Compiler
       end
     end
 
-    CupcakeAppsSidebar.internal_assets_dirs.each do |path|
+    CupcakeAppsBar.internal_assets_dirs.each do |path|
       environment.append_path(path)
     end
 
@@ -45,7 +45,7 @@ module CupcakeAppsSidebar::Compiler
   end
 
   def output_dir
-    @output_dir ||= CupcakeAppsSidebar.expand_path("build")
+    @output_dir ||= CupcakeAppsBar.expand_path("build")
   end
 
   def compile_assets(options = {})
