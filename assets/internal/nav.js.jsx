@@ -45,7 +45,7 @@
 			return (
 				<li className={this.props.iconName + (this.props.selected ? " active" : "")}>
 					<a href={this.props.url} title={this.props.title} onClick={this.handleClick}>
-						{this.props.title}
+						<span>{this.props.title}</span>
 					</a>
 				</li>
 			);
