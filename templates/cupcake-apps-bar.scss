@@ -20,6 +20,12 @@
 
 <%= glyph_vars_scss %>
 
+$whiteColor: #ffffff;
+$almostWhiteColor: #f3f4f7;
+$grayBlackColor: #272b34;
+$almostBlackColor: #191d23;
+$greenColor: #08a14b;
+
 #apps-bar {
   position: absolute;
   top: 0;
@@ -27,7 +33,7 @@
   bottom: 0;
   left: 0;
 
-  background-color: #272b34;
+  background-color: $grayBlackColor;
 }
 
 ul {
@@ -49,8 +55,8 @@ li {
     display: block;
   }
 
-  color: #fff;
-  border-bottom: 2px solid #191d23;
+  color: $whiteColor;
+  border-bottom: 2px solid $almostBlackColor;
 
   a, a:hover, a:visited, a:active {
     color: inherit;
@@ -63,8 +69,8 @@ li {
   }
 
   &.active {
-    background-color: #191d23;
-    color: #08a14b;
+    background-color: $almostBlackColor;
+    color: $greenColor;
     border: 0;
 
     &:after {
@@ -77,7 +83,7 @@ li {
       margin-top: -5px;
       border-top: 5px solid transparent;
       border-bottom: 5px solid transparent;
-      border-right: 5px solid white;
+      border-right: 5px solid $almostWhiteColor;
       content: " ";
     }
   }
