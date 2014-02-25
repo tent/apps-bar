@@ -49,13 +49,16 @@ li {
     display: block;
   }
 
-  padding: 1.0125em 0;
   color: #fff;
-  cursor: pointer;
   border-bottom: 2px solid #191d23;
 
   a, a:hover, a:visited, a:active {
     color: inherit;
+  }
+
+  a {
+    display: block;
+    padding: 1.0125em 0;
     text-decoration: none;
   }
 
