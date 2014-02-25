@@ -18,8 +18,7 @@
 						key={item.iconName}
 						iconName={item.iconName}
 						title={item.title}
-						url={item.url}
-						selected={item.selected} />
+						url={item.url} />
 				);
 			});
 
@@ -42,8 +41,10 @@
 		},
 
 		render: function () {
+			var selected = document.referrer.match(new RegExp("^"+ this.props.url));
+
 			return (
-				<li className={this.props.iconName + (this.props.selected ? " active" : "")}>
+				<li className={this.props.iconName + (selected ? " active" : "")}>
 					<a href={this.props.url} title={this.props.title} onClick={this.handleClick}>
 						<span>{this.props.title}</span>
 					</a>
