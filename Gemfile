@@ -6,6 +6,7 @@ gem "rack"
 
 gem "sass"
 gem "sprockets-sass"
+gem "sprockets-helpers"
 gem "sprockets", :git => "git://github.com/jvaill/sprockets.git", :branch => "master"
 gem "uglifier"
 gem "sprockets-rainpress"

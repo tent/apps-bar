@@ -15,7 +15,8 @@ module CupcakeAppsBar::Compiler
       env.logger = Logger.new(options[:logfile] || STDOUT)
     end
     environment.context_class.class_eval do
-      def asset_path(name)
+      def asset_path(name, options = {})
+        name = name.sub(/[?#].+\Z/, '')
         asset = environment.find_asset(name)
         raise StandardError.new("#{name.inspect} does not exist within #{environment.paths.inspect}!") unless asset
         path = asset.digest_path
