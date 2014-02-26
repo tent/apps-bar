@@ -26,6 +26,8 @@ $grayBlackColor: #272b34;
 $almostBlackColor: #191d23;
 $greenColor: #08a14b;
 
+$mediumBreakPoint: "screen and (max-width: 1152px)";
+
 #apps-bar {
   position: absolute;
   top: 0;
@@ -108,4 +110,31 @@ li {
       content: $cupcake-app-icons-flynn;
     }
   
+}
+
+@media #{$mediumBreakPoint} {
+  li {
+    display: block;
+    float: left;
+
+    border: unset;
+    border-right: 2px solid $almostBlackColor;
+
+    &.active:after {
+      right: unset;
+      top: 0;
+      left: 50%;
+      margin-top: unset;
+      margin-left: -5px;
+
+      border: unset;
+      border-top: 5px solid $almostWhiteColor;
+      border-right: 5px solid transparent;
+      border-left: 5px solid transparent;
+    }
+
+    a {
+      padding: 1.0125em;
+    }
+  }
 }

@@ -1,5 +1,7 @@
 $apps-bar-width: 70px;
 
+$mediumBreakPoint: "screen and (max-width: 1152px)";
+
 #apps-bar {
 	position: absolute;
 	display: block;
@@ -12,4 +14,18 @@ $apps-bar-width: 70px;
 
 body {
 	margin-left: $apps-bar-width;
+}
+
+@media #{$mediumBreakPoint} {
+  #apps-bar {
+    top: unset;
+    bottom: 0;
+    height: $apps-bar-width;
+    width: 100%;
+  }
+
+  body {
+    margin-left: 0;
+    margin-bottom: $apps-bar-width;
+  }
 }
