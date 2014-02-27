@@ -3,7 +3,7 @@ $apps-bar-width: 70px;
 $mediumBreakPoint: "screen and (max-width: 1152px)";
 
 #apps-bar {
-	position: absolute;
+	position: fixed;
 	display: block;
 	top: 0;
 	left: 0;
