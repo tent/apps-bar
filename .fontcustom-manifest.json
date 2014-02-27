@@ -1,7 +1,7 @@
 {
   "checksum": {
-    "previous": "9e10ac447cf410b3304f4458160919c771095dd441b638c83ae8431f8943362a",
-    "current": "9e10ac447cf410b3304f4458160919c771095dd441b638c83ae8431f8943362a"
+    "previous": "ab8039fd191318ac379c6a61068c68430ff680f0f1823d2bc38b19d2a22fff94",
+    "current": "ab8039fd191318ac379c6a61068c68430ff680f0f1823d2bc38b19d2a22fff94"
   },
   "fonts": [
     "./assets/internal/cupcake-app-icons.ttf",
