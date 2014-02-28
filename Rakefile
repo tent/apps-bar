@@ -12,3 +12,8 @@ task :compile => "fontcustom:build" do
   sh "rm -rf #{CupcakeAppsBar::Compiler.output_dir}"
   CupcakeAppsBar::Compiler.gzip_assets
 end
+
+namespace :assets do
+  task :precompile => :compile do
+  end
+end
