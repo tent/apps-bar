@@ -28,6 +28,11 @@ $greenColor: #08a14b;
 
 $mediumBreakPoint: "screen and (min-width: 71px)";
 
+body {
+  margin: 0;
+  overflow: hidden;
+}
+
 #apps-bar {
   position: absolute;
   top: 0;
@@ -117,17 +122,17 @@ li {
     display: block;
     float: left;
 
-    border: unset;
+    border: 0;
     border-right: 2px solid $almostBlackColor;
 
     &.active:after {
-      right: unset;
+      right: auto;
       top: 0;
       left: 50%;
-      margin-top: unset;
+      margin-top: auto;
       margin-left: -5px;
 
-      border: unset;
+      border: 0;
       border-top: 5px solid $almostWhiteColor;
       border-right: 5px solid transparent;
       border-left: 5px solid transparent;

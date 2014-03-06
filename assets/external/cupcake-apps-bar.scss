@@ -18,7 +18,7 @@ body {
 
 @media #{$mediumBreakPoint} {
   #apps-bar {
-    top: unset;
+    top: auto;
     bottom: 0;
     height: $apps-bar-width;
     width: 100%;
