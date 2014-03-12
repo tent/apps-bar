@@ -5,10 +5,7 @@ config: (pwd)/fontcustom.yml
 debug: false
 quiet: false
 
-font_design_size: 52                  # The size of the original glyphs
-font_em: 5200                         # Scale font up to this size
-font_ascent: 5000                     # Location of font ascent
-font_descent: 200                     # Location of font descent
+autowidth: true
 
 no_hash: true
 font_name: "cupcake-app-icons"

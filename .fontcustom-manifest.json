@@ -1,7 +1,7 @@
 {
   "checksum": {
-    "previous": "30d768f157dc10b0577c29cdd3ab2b382cc0986a8a92b955eb906f13a7b5281f",
-    "current": "30d768f157dc10b0577c29cdd3ab2b382cc0986a8a92b955eb906f13a7b5281f"
+    "previous": "ae1305f32579501679b41953ad8c0aef19d91ce354aa72a96efdc9cc2fe2ee4a",
+    "current": "ae1305f32579501679b41953ad8c0aef19d91ce354aa72a96efdc9cc2fe2ee4a"
   },
   "fonts": [
     "./assets/internal/cupcake-app-icons.ttf",
@@ -10,20 +10,24 @@
     "./assets/internal/cupcake-app-icons.eot"
   ],
   "glyphs": {
+    "auth": {
+      "codepoint": 61697,
+      "source": "./src/auth.svg"
+    },
     "flynn": {
       "codepoint": 61696,
       "source": "./src/flynn.svg"
     }
   },
   "options": {
-    "autowidth": false,
+    "autowidth": true,
     "config": "fontcustom.yml",
     "css_selector": ".app-icn-{{glyph}}",
     "debug": false,
-    "font_ascent": 5000,
-    "font_descent": 200,
-    "font_design_size": 52,
-    "font_em": 5200,
+    "font_ascent": 448,
+    "font_descent": 64,
+    "font_design_size": 16,
+    "font_em": 512,
     "font_name": "cupcake-app-icons",
     "force": false,
     "input": {
