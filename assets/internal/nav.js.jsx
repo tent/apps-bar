@@ -49,7 +49,8 @@
 						iconName={item.iconName}
 						title={item.title}
 						url={item.url}
-						selected={item.url === this.state.selectedURL} />
+						onClick={item.onClick}
+						selected={item.url && (item.url === this.state.selectedURL)} />
 				);
 			}.bind(this));
 
@@ -68,7 +69,12 @@
 
 		handleClick: function (e) {
 			e.preventDefault();
-			window.parent.location.href = this.props.url;
+
+			if (this.props.onClick) {
+				this.props.onClick();
+			} else {
+				window.parent.location.href = this.props.url;
+			}
 		},
 
 		render: function () {
@@ -79,7 +85,7 @@
 					</a>
 				</li>
 			);
-		},
+		}
 	});
 
 })();
