@@ -32,6 +32,9 @@
 		},
 
 		postMessage: function (message) {
+			if (__referrerHost === "") {
+				return;
+			}
 			window.parent.postMessage(message, __referrerHost);
 		},
 
