@@ -43,6 +43,13 @@
 
 		render: function () {
 			var listItems = this.props.items.map(function (item) {
+				var selected;
+				if (item.hasOwnProperty('selected')) {
+					selected = item.selected;
+				} else {
+					selected = item.url && (item.url === this.state.selectedURL);
+				}
+
 				return (
 					<NavItem
 						key={item.iconName}
@@ -50,7 +57,7 @@
 						title={item.title}
 						url={item.url}
 						onClick={item.onClick}
-						selected={item.url && (item.url === this.state.selectedURL)} />
+						selected={selected} />
 				);
 			}.bind(this));
 

@@ -96,6 +96,15 @@
 			}
 		},
 
+		setItemSelected: function (name, selected) {
+			for (var i = 0, ref = this.__navItems, len = ref.length; i < len; i++) {
+				if (ref[i].name === name) {
+					ref[i].selected = selected;
+					break;
+				}
+			}
+		},
+
 		__createNavItemClickHandler: function (item) {
 			return function () {
 				this.postMessage({

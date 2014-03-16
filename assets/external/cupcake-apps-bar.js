@@ -53,6 +53,14 @@
 				name: name,
 				title: title
 			});
+		},
+
+		setItemSelected: function (name, selected) {
+			this.postMessage({
+				action: 'setSelected',
+				name: name,
+				selected: selected
+			});
 		}
 	};
 
