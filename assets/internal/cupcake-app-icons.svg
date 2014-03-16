@@ -1,11 +1,11 @@
 <?xml version="1.0" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
 <!--
-2014-3-12: Created.
+2014-3-16: Created.
 -->
 <svg xmlns="http://www.w3.org/2000/svg">
 <metadata>
-Created by FontForge 20120731 at Wed Mar 12 11:12:22 2014
+Created by FontForge 20120731 at Sun Mar 16 12:24:29 2014
  By Jesse
 Created by Jesse with FontForge 2.0 (http://fontforge.sf.net)
 </metadata>
@@ -22,7 +22,7 @@ Created by Jesse with FontForge 2.0 (http://fontforge.sf.net)
     bbox="0 -64 512 456"
     underline-thickness="25.6"
     underline-position="-51.2"
-    unicode-range="U+F100-F101"
+    unicode-range="U+F100-F102"
   />
     <missing-glyph />
     <glyph glyph-name="uniF100" unicode="&#xf100;" 
@@ -32,5 +32,9 @@ c0 88 72 160 160 160zM256 448c141 0 256 -115 256 -256s-115 -256 -256 -256s-256 1
 d="M229 -56c-32 0 -60 6 -87 17s-53 28 -75 50s-39 47 -50 74s-17 56 -17 88c0 34 6 66 20 95c14 30 33 56 57 77c3 3 6 4 10 4h1c4 0 7 -2 10 -5s4 -7 4 -11s-2 -7 -5 -9v-1c-45 -40 -68 -91 -68 -150c1 -55 21 -102 59 -141c39 -39 86 -58 141 -58c54 0 102 19 141 58
 s59 87 59 141c0 59 -23 110 -67 149c-3 3 -5 6 -5 10s1 8 4 11s6 5 10 5h2c4 0 6 -1 9 -3c24 -21 42 -48 56 -77s21 -61 21 -95c0 -32 -6 -61 -17 -88s-29 -52 -51 -74s-47 -39 -74 -50s-56 -17 -88 -17zM230 159c-4 0 -8 1 -11 4s-4 6 -4 10v269c0 4 1 6 4 9s7 5 11 5
 s8 -2 11 -5s4 -5 4 -9v-269c0 -4 -1 -7 -4 -10s-7 -4 -11 -4z" />
+    <glyph glyph-name="uniF102" unicode="&#xf102;" 
+d="M270 29v43h171v-43h-171zM215 72c10 -4 25 -7 25 -13v-14c-1 -4 -5 -2 -10 -2h-143c-5 0 -9 -1 -10 3v11c0 6 15 11 25 15s19 8 24 9s7 4 9 8c1 2 1 2 2 3c0 3 -1 6 -3 9s-9 17 -11 45s5 56 33 56v0v0h5v0h1c25 0 34 -28 32 -56s-8 -42 -10 -45s-4 -6 -4 -9
+c1 -1 1 -1 2 -3c2 -4 4 -7 9 -8s14 -5 24 -9zM256 369c9 0 16 -7 16 -16s-7 -16 -16 -16s-16 7 -16 16s7 16 16 16zM270 101v29h171v-29h-171zM451 332c34 0 61 -29 61 -63v-250c0 -34 -27 -63 -61 -63h-390c-34 0 -61 29 -61 63v250c0 34 27 63 61 63h124v37
+c0 44 28 79 71 79s71 -35 71 -79v-37h124zM213 369v-94h86v94c0 28 -16 50 -43 50s-43 -22 -43 -50zM484 19v250c0 18 -15 34 -33 34h-110v-72h-170v72h-110c-18 0 -33 -16 -33 -34v-250c0 -18 15 -34 33 -34h390c18 0 33 16 33 34zM270 173v29h171v-29h-171z" />
   </font>
 </defs></svg>
