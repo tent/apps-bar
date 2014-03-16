@@ -75,6 +75,10 @@
 		displayName: "NavItem (AppBar.Views.Nav)",
 
 		handleClick: function (e) {
+			if (this.props.url && (e.ctrlKey || e.metaKey || e.shiftKey)) {
+				return;
+			}
+
 			e.preventDefault();
 
 			if (this.props.onClick) {
