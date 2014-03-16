@@ -2,13 +2,21 @@
 	var __iframe = document.getElementById('apps-bar');
 	var __iframeHost = __iframe.attributes.src.value.replace(/^(https?:\/\/[^\/]+).*$/, '$1');
 	var __handlers = {};
+	var __queue = [];
 
 	var CupcakeAppsBar = window.CupcakeAppsBar = {
 		run: function () {
 			this.__ready = true;
+			for (var i = 0, len = __queue.length; i < __queue.length; i++) {
+				this.postMessage(__queue[i]);
+			}
 		},
 
 		postMessage: function (message) {
+			if ( !this.__ready ) {
+				__queue.push(message);
+				return;
+			}
 			__iframe.contentWindow.postMessage(message, __iframeHost);
 		},
 
