@@ -12,8 +12,8 @@
 			}
 		},
 
-		postMessage: function (message) {
-			if ( !this.__ready ) {
+		postMessage: function (message, force) {
+			if ( !this.__ready && !force ) {
 				__queue.push(message);
 				return;
 			}
@@ -73,4 +73,7 @@
 	};
 
 	window.addEventListener('message', CupcakeAppsBar.onMessage.bind(CupcakeAppsBar), false);
+	CupcakeAppsBar.postMessage({
+		action: "init"
+	}, true);
 })();

@@ -45,6 +45,12 @@
 			}
 
 			switch (e.data.action) {
+				case 'init':
+					this.postMessage({
+						action: "init"
+					});
+				break;
+
 				case 'handlerRegistered':
 					this.itemHandlerRegistered(e.data.name, e.data.url);
 					this.nav.setProps({
