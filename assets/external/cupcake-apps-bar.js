@@ -38,8 +38,13 @@
 			}
 		},
 
-		registerHandler: function (name, callback) {
+		registerHandler: function (name, callback, url) {
 			__handlers[name] = callback;
+			this.postMessage({
+				action: 'handlerRegistered',
+				name: name,
+				url: url
+			});
 		},
 
 		setItemTitle: function (name, title) {

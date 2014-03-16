@@ -45,6 +45,13 @@
 			}
 
 			switch (e.data.action) {
+				case 'handlerRegistered':
+					this.itemHandlerRegistered(e.data.name, e.data.url);
+					this.nav.setProps({
+						items: this.__navItems
+					});
+				break;
+
 				case 'setTitle':
 					this.setItemTitle(e.data.name, e.data.title);
 					this.nav.setProps({
@@ -52,8 +59,31 @@
 					});
 				break;
 
+				case 'setSelected':
+					this.setItemSelected(e.data.name, e.data.selected);
+					this.nav.setProps({
+						items: this.__navItems
+					});
+				break;
+
 				default:
 					console.warn("CupcakeAppsBar (inner): Unknown action "+ JSON.stringify(e.data));
+			}
+		},
+
+		itemHandlerRegistered: function (name, url) {
+			for (var i = 0, ref = this.__navItems, len = ref.length; i < len; i++) {
+				if (ref[i].name === name) {
+					// ensure item has a click handler
+					ref[i].onClick = ref[i].onClick || this.__createNavItemClickHandler(ref[i]);
+
+					// allow overriding item URL
+					if (url) {
+						ref[i].url = url;
+					}
+
+					break;
+				}
 			}
 		},
 
