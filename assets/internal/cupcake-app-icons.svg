@@ -1,11 +1,11 @@
 <?xml version="1.0" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
 <!--
-2014-3-16: Created.
+2014-4-2: Created.
 -->
 <svg xmlns="http://www.w3.org/2000/svg">
 <metadata>
-Created by FontForge 20120731 at Sun Mar 16 12:24:29 2014
+Created by FontForge 20120731 at Wed Apr  2 21:20:06 2014
  By Jesse
 Created by Jesse with FontForge 2.0 (http://fontforge.sf.net)
 </metadata>
@@ -22,9 +22,11 @@ Created by Jesse with FontForge 2.0 (http://fontforge.sf.net)
     bbox="0 -64 512 456"
     underline-thickness="25.6"
     underline-position="-51.2"
-    unicode-range="U+F100-F102"
+    unicode-range="U+F100-F105"
   />
     <missing-glyph />
+    <glyph glyph-name="uniF105" unicode="&#xf105;" 
+d="M512 322v-385h-386v385h386zM478 26v262h-318v-262h318zM34 166h35v-104h-69v385h386v-83h-34v49h-318v-247z" />
     <glyph glyph-name="uniF100" unicode="&#xf100;" 
 d="M328 222c8 -5 10 -15 6 -23l-58 -103c7 -8 12 -20 12 -32c0 -27 -21 -48 -48 -48s-48 21 -48 48s21 48 48 48c3 0 5 -1 8 -1l58 105c4 8 14 11 22 6zM256 48v32h-32v-32h32zM256 352c88 0 160 -72 160 -160h-32c0 71 -57 128 -128 128s-128 -57 -128 -128h-32
 c0 88 72 160 160 160zM256 448c141 0 256 -115 256 -256s-115 -256 -256 -256s-256 115 -256 256s115 256 256 256zM256 -32c124 0 224 100 224 224s-100 224 -224 224s-224 -100 -224 -224s100 -224 224 -224z" />

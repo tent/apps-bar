@@ -1,7 +1,7 @@
 {
   "checksum": {
-    "previous": "742b93e768f8aa114a40fab60d7a14388aaa21c8b13684c947a12a5d498cc10a",
-    "current": "742b93e768f8aa114a40fab60d7a14388aaa21c8b13684c947a12a5d498cc10a"
+    "previous": "1af4b73e3badc658fc3a10261df7fb6acfc5fdcc6659979932b7897beb47615d",
+    "current": "1af4b73e3badc658fc3a10261df7fb6acfc5fdcc6659979932b7897beb47615d"
   },
   "fonts": [
     "./assets/internal/cupcake-app-icons.ttf",
@@ -21,6 +21,10 @@
     "name-tag": {
       "codepoint": 61698,
       "source": "./src/name-tag.svg"
+    },
+    "window-o": {
+      "codepoint": 61701,
+      "source": "./src/window-o.svg"
     }
   },
   "options": {
