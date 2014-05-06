@@ -1,7 +1,7 @@
 {
   "checksum": {
-    "previous": "1af4b73e3badc658fc3a10261df7fb6acfc5fdcc6659979932b7897beb47615d",
-    "current": "1af4b73e3badc658fc3a10261df7fb6acfc5fdcc6659979932b7897beb47615d"
+    "previous": "e79f19eed9d10ca87a0b94b8b86fda80ae2b87910b4310a1d8487db851780bc9",
+    "current": "e79f19eed9d10ca87a0b94b8b86fda80ae2b87910b4310a1d8487db851780bc9"
   },
   "fonts": [
     "./assets/internal/cupcake-app-icons.ttf",
@@ -10,21 +10,29 @@
     "./assets/internal/cupcake-app-icons.eot"
   ],
   "glyphs": {
+    "admin": {
+      "codepoint": 61701,
+      "source": "./src/admin.svg"
+    },
     "auth": {
       "codepoint": 61697,
       "source": "./src/auth.svg"
     },
-    "flynn": {
-      "codepoint": 61696,
-      "source": "./src/flynn.svg"
+    "files": {
+      "codepoint": 61708,
+      "source": "./src/files.svg"
     },
-    "name-tag": {
+    "messenger": {
+      "codepoint": 61710,
+      "source": "./src/messenger.svg"
+    },
+    "micro": {
+      "codepoint": 61702,
+      "source": "./src/micro.svg"
+    },
+    "search": {
       "codepoint": 61698,
-      "source": "./src/name-tag.svg"
-    },
-    "window-o": {
-      "codepoint": 61701,
-      "source": "./src/window-o.svg"
+      "source": "./src/search.svg"
     }
   },
   "options": {
