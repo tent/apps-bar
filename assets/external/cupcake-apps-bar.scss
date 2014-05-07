@@ -1,4 +1,5 @@
 $apps-bar-width: 70px;
+$apps-bar-bg-color: #272b34;
 
 $mediumBreakPoint: "screen and (min-width: 70em)";
 
@@ -10,6 +11,7 @@ $mediumBreakPoint: "screen and (min-width: 70em)";
 	left: 0;
 	bottom: 0;
 	height: $apps-bar-width;
+	background-color: $apps-bar-bg-color;
 	width: 100%;
 }
 
