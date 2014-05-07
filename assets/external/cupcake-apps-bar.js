@@ -7,7 +7,7 @@
 	var CupcakeAppsBar = window.CupcakeAppsBar = {
 		run: function () {
 			this.__ready = true;
-			for (var i = 0, len = __queue.length; i < __queue.length; i++) {
+			for (var i = 0, len = __queue.length; i < len; i++) {
 				this.postMessage(__queue[i]);
 			}
 		},
