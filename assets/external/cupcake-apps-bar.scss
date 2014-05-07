@@ -1,31 +1,31 @@
 $apps-bar-width: 70px;
 
-$mediumBreakPoint: "screen and (max-width: 1152px)";
+$mediumBreakPoint: "screen and (min-width: 70em)";
 
 #apps-bar {
 	position: fixed;
 	display: block;
-	top: 0;
-	left: 0;
-	height: 100%;
-	width: $apps-bar-width;
 	border: 0;
+	top: auto;
+	left: 0;
+	bottom: 0;
+	height: $apps-bar-width;
+	width: 100%;
 }
 
 body {
-	margin-left: $apps-bar-width;
+	margin-left: 0;
+	margin-bottom: $apps-bar-width;
 }
 
 @media #{$mediumBreakPoint} {
-  #apps-bar {
-    top: auto;
-    bottom: 0;
-    height: $apps-bar-width;
-    width: 100%;
-  }
+	#apps-bar {
+		top: 0;
+		height: 100%;
+		width: $apps-bar-width;
+	}
 
-  body {
-    margin-left: 0;
-    margin-bottom: $apps-bar-width;
-  }
+	body {
+		margin-left: $apps-bar-width;
+	}
 }
