@@ -1,39 +1,66 @@
-AppBar.config = {
-  navItems: [
-    {
-      iconName: "micro",
-      name: 'micro',
-      title: "Micro",
-      url: "https://micro.cupcake.io"
-    },
-    {
-      iconName: "search",
-      name: "search",
-      title: "Search",
-      url: "https://micro.cupcake.io/search"
-    },
-    {
-      iconName: "messenger",
-      name: "messenger",
-      title: "Messenger",
-      url: "https://messenger.cupcake.io"
-    },
-    {
-      iconName: "files",
-      name: "files",
-      title: "Files",
-      url: "https://files.cupcake.io"
-    },
-    {
-      iconName: "admin",
-      name: "admin",
-      title: "Admin",
-      url: "https://admin.cupcake.io"
-    },
-    {
-      iconName: "auth",
-      name: "auth",
-      title: null
-    }
-  ]
-};
+if (window.location.search.match(/flynn/)) {
+  AppBar.config = {
+    navItems: [
+      {
+        iconName: "flynn",
+        name: 'flynn',
+        title: "Flynn"
+      },
+      {
+        iconName: "window-o",
+        name: "apps",
+        title: "Apps"
+      },
+      {
+        iconName: "name-tag",
+        name: "account",
+        title: "Account"
+      },
+      {
+        iconName: "auth",
+        name: "auth",
+        title: null
+      }
+    ]
+  };
+} else {
+  AppBar.config = {
+    navItems: [
+      {
+        iconName: "micro",
+        name: 'micro',
+        title: "Micro",
+        url: "https://micro.cupcake.io"
+      },
+      {
+        iconName: "search",
+        name: "search",
+        title: "Search",
+        url: "https://micro.cupcake.io/search"
+      },
+      {
+        iconName: "messenger",
+        name: "messenger",
+        title: "Messenger",
+        url: "https://messenger.cupcake.io"
+      },
+      {
+        iconName: "files",
+        name: "files",
+        title: "Files",
+        url: "https://files.cupcake.io"
+      },
+      {
+        iconName: "admin",
+        name: "admin",
+        title: "Admin",
+        url: "https://admin.cupcake.io"
+      },
+      {
+        iconName: "auth",
+        name: "auth",
+        title: null
+      }
+    ]
+  };
+}
