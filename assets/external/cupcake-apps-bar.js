@@ -1,4 +1,6 @@
 (function () {
+	"use strict";
+
 	var __iframe = document.getElementById('apps-bar');
 	var __iframeHost = __iframe.attributes.src.value.replace(/^(https?:\/\/[^\/]+).*$/, '$1');
 	var __handlers = {};
