@@ -7,7 +7,7 @@ Icon font is generated with [FontCustom](https://github.com/FontCustom/fontcusto
 
 ```ruby
 # Gemfile
-gem "cupcake-apps-bar", :git => "git://github.com/cupcake/cupcake-apps-bar.git"
+gem "cupcake-apps-bar", :git => "git://github.com/cupcake/apps-bar.git"
 ```
 
 ```ruby
