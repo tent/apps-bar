@@ -52,7 +52,7 @@
 
 				return (
 					<NavItem
-						key={item.iconName}
+						key={item.name}
 						iconName={item.iconName}
 						title={item.title}
 						url={item.url}
